@@ -1,0 +1,38 @@
+{
+	"name": "coffeephp/component-registry",
+	"description": "Provides an interface for registering components in the DI.",
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "Danny Damsky",
+			"email": "dannydamsky99@gmail.com"
+		}
+	],
+	"keywords": [
+		"coffeephp",
+		"coffee",
+		"php",
+		"di",
+		"dependency",
+		"injection",
+		"component",
+		"registry",
+		"registrar",
+		"register"
+	],
+	"require": {
+		"php": ">=7.4",
+		"ext-apcu": "*",
+		"coffeephp/di": "1.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"CoffeePhp\\ComponentRegistry\\": "src/"
+		}
+	},
+	"config": {
+		"sort-packages": true,
+		"optimize-autoloader": true,
+		"apcu-autoloader": true
+	}
+}

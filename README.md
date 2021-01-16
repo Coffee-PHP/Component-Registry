@@ -1,5 +1,7 @@
 # Coffee PHP - Component Registry
 
+![Build](https://github.com/Coffee-PHP/Component-Registry/workflows/Build/badge.svg)
+
 Provides an interface for registering components in the DI.
 
 ```

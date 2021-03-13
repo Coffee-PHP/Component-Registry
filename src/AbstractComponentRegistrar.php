@@ -1,9 +1,9 @@
 <?php
 
 /**
- * ComponentRegistrarInterface.php
+ * AbstractComponentRegistrar.php
  *
- * Copyright 2020 Danny Damsky
+ * Copyright 2021 Danny Damsky
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -18,32 +18,28 @@
  *
  * @package coffeephp\component-registry
  * @author Danny Damsky <dannydamsky99@gmail.com>
- * @since 2020-08-29
+ * @since 2021-03-14
  */
 
 declare(strict_types=1);
 
-namespace CoffeePhp\ComponentRegistry\Contract;
+namespace CoffeePhp\ComponentRegistry;
 
+use CoffeePhp\ComponentRegistry\Contract\ComponentRegistrarInterface;
 use CoffeePhp\Di\Contract\ContainerInterface;
 
 /**
- * Interface ComponentRegistrarInterface
+ * Interface AbstractComponentRegistrar
  * @package coffeephp\component-registry
  * @author Danny Damsky <dannydamsky99@gmail.com>
- * @since 2020-08-29
+ * @since 2021-03-14
  */
-interface ComponentRegistrarInterface
+abstract class AbstractComponentRegistrar implements ComponentRegistrarInterface
 {
     /**
-     * A component registrar's constructor must accept only the DI instance.
-     *
-     * @param ContainerInterface $di
+     * @inheritDoc
      */
-    public function __construct(ContainerInterface $di);
-
-    /**
-     * Register application components.
-     */
-    public function register(): void;
+    final public function __construct(protected ContainerInterface $di)
+    {
+    }
 }

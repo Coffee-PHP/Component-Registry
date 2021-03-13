@@ -25,8 +25,6 @@ declare(strict_types=1);
 
 namespace CoffeePhp\ComponentRegistry\Contract;
 
-use CoffeePhp\Di\Contract\ContainerInterface;
-
 /**
  * Interface ComponentRegistrarInterface
  * @package coffeephp\component-registry
@@ -35,13 +33,6 @@ use CoffeePhp\Di\Contract\ContainerInterface;
  */
 interface ComponentRegistrarInterface
 {
-    /**
-     * A component registrar's constructor must accept only the DI instance.
-     *
-     * @param ContainerInterface $di
-     */
-    public function __construct(ContainerInterface $di);
-
     /**
      * Register application components.
      */

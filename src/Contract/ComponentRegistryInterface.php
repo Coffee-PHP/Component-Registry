@@ -45,5 +45,5 @@ interface ComponentRegistryInterface
      *
      * @psalm-suppress InvalidThrow
      */
-    public function register(string $id): void;
+    public function register(string $id): void; // @phpstan-ignore-line
 }

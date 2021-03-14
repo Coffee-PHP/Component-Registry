@@ -38,8 +38,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "CoffeePhp\\ComponentRegistry\\Mock\\": "test/Mock/",
-            "CoffeePhp\\ComponentRegistry\\Unit\\": "test/Unit/"
+            "CoffeePhp\\ComponentRegistry\\Test\\Mock\\": "test/Mock/",
+            "CoffeePhp\\ComponentRegistry\\Test\\Unit\\": "test/Unit/"
         }
     },
     "config": {

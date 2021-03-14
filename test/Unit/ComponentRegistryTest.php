@@ -23,13 +23,12 @@
 
 declare(strict_types=1);
 
-namespace CoffeePhp\ComponentRegistry\Unit;
+namespace CoffeePhp\ComponentRegistry\Test\Unit;
 
 use CoffeePhp\ComponentRegistry\ComponentRegistry;
-use CoffeePhp\ComponentRegistry\Mock\MockComponentRegistrar;
+use CoffeePhp\ComponentRegistry\Test\Mock\MockComponentRegistrar;
 use CoffeePhp\Di\Container;
 use CoffeePhp\QualityTools\TestCase;
-
 use stdClass;
 
 use function PHPUnit\Framework\assertFalse;

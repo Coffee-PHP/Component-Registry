@@ -23,7 +23,7 @@
 
 declare(strict_types=1);
 
-namespace CoffeePhp\ComponentRegistry\Mock;
+namespace CoffeePhp\ComponentRegistry\Test\Mock;
 
 use CoffeePhp\ComponentRegistry\Contract\ComponentRegistrarInterface;
 use CoffeePhp\Di\Contract\ContainerInterface;

@@ -8,7 +8,7 @@
             "email": "dannydamsky99@gmail.com"
         }
     ],
-    "version": "1.4.0",
+    "version": "1.5.0",
     "readme": "README.md",
     "time": "2021-03-14",
     "keywords": [
@@ -25,7 +25,8 @@
     ],
     "require": {
         "php": ">=8.0",
-        "ext-apcu": "*"
+        "ext-apcu": "*",
+        "coffeephp/di": "1.*"
     },
     "require-dev": {
         "coffeephp/quality-tools": "1.*"
@@ -33,6 +34,12 @@
     "autoload": {
         "psr-4": {
             "CoffeePhp\\ComponentRegistry\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CoffeePhp\\ComponentRegistry\\Test\\Mock\\": "test/Mock/",
+            "CoffeePhp\\ComponentRegistry\\Test\\Unit\\": "test/Unit/"
         }
     },
     "config": {
@@ -49,7 +56,7 @@
         "coffeephp:exec:phpcs": "coffeephp_exec_phpcs",
         "coffeephp:exec:phpmd": "coffeephp_exec_phpmd",
         "coffeephp:exec:phpstan-analyse": "coffeephp_exec_phpstan_analyse",
-        "coffeephp:exec:phpunit": "coffeephp_exec_phpunit --testsuite unit,integration",
+        "coffeephp:exec:phpunit": "coffeephp_exec_phpunit --testsuite unit",
         "coffeephp:exec:psalm": "coffeephp_exec_psalm",
         "coffeephp:exec:psalm-alter": "coffeephp_exec_psalm_alter",
         "coffeephp:exec:publish": "coffeephp_exec_publish"

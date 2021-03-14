@@ -10,9 +10,6 @@
     <testsuite name="unit">
       <directory phpVersion="8.0">test/Unit/</directory>
     </testsuite>
-    <testsuite name="integration">
-      <directory phpVersion="8.0">test/Integration/</directory>
-    </testsuite>
   </testsuites>
   <coverage>
     <include>

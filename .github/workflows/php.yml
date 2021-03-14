@@ -30,6 +30,9 @@ jobs:
         if: steps.composer-cache.outputs.cache-hit != 'true'
         run: composer install --prefer-dist --no-progress --no-suggest
 
+      - name: Run PHPUnit
+        run: composer run-script coffeephp:exec:phpunit
+
       - name: Run Psalm
         run: composer run-script coffeephp:exec:psalm
 

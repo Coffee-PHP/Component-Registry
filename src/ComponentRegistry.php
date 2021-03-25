@@ -37,15 +37,12 @@ use CoffeePhp\Di\Contract\ContainerInterface;
  */
 final class ComponentRegistry implements ComponentRegistryInterface
 {
-    private ContainerInterface $di;
-
     /**
      * ComponentRegistry constructor.
      * @param ContainerInterface $di
      */
-    public function __construct(ContainerInterface $di)
+    public function __construct(private ContainerInterface $di)
     {
-        $this->di = $di;
     }
 
     /**
